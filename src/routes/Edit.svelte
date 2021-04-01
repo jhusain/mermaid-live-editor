@@ -26,7 +26,11 @@
     } else if (hisCode) {
       updateCodeStore({
         code: hisCode.code,
-        mermaid: {},
+        mermaid: {
+          sequence: {
+            messageAlign: 'left',
+          },
+        },
         updateEditor: true,
       });
     } else {
